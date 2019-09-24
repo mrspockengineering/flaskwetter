@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for wetter in wdaten %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="weather-metadata">
+              <a class="mr-2" href="#">{{ wetter.author }}</a>
+              <small class="text-muted">{{ wetter.date }}</small>
+            </div><br><br>Wetterportal 01a_WetterFlask
+            <h2><a class="max_temp" href="#">Temp max: {{ wetter.max_temp }}</a>  <t><a class="min_temp" href="#">Temp min: {{ wetter.min_temp }}</a></h2>
+            
+            <p class="article-content">{{ wetter.stadt }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
