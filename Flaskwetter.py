@@ -13,7 +13,10 @@ https://realpython.com/python-f-strings/
 
 security (1t2)
 https://www.youtube.com/watch?v=J5bIPtEbS0Q  (jwt)
-https://www.youtube.com/watch?v=J5bIPtEbS0Q&t=436s
+
+next:
+https
+heroku        https://www.youtube.com/watch?v=skc-ZEU9kO8
 '''
 
 from flask import Flask, request, make_response, render_template, url_for, jsonify
