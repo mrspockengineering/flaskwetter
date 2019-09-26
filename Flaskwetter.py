@@ -1,7 +1,6 @@
 '''
 
-version 1.0
-
+version 1.0c
 
 Wetterapp:
 - Routing individuell
@@ -35,7 +34,7 @@ from authlib.flask.oauth1.sqla import (
 )
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://tmp/test.db'
 db = SQLAlchemy(app)
 app.config['SECRET_KEY'] = 'thisisthesecretkey'
 
@@ -265,10 +264,17 @@ def jsonwetterId(wid):
     )
     return resp
 
+# @failsafe
+# def create_app():
+#     from routes import app
+#     return app
+
 if __name__ == '__main__':
 #    print(getWetterId(0))
+#    create_app()
     print(fformat())
     app.run(debug=True)
+
 
 
 
